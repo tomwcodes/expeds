@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>About</title>
+    <title>Stay Updated</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -62,8 +62,8 @@
 
                 <ul class="header__nav">
                     <li><a href="index.html">Home</a></li>
-                    <li class="current"><a href="about.html" title="">About</a></li>
-                    <li><a href="updates.html">Updates</a></li>
+                    <li><a href="about.html" title="">About</a></li>
+                    <li class="current"><a href="updates.html" title="">Updates</a></li>
                 </ul> <!-- end header__nav -->
 
             </nav> <!-- end header__nav-wrap -->
@@ -75,7 +75,6 @@
 
         </header> <!-- end s-header -->
 
-
         <!-- site content
         ================================================== -->
         <div class="s-content content">
@@ -85,29 +84,37 @@
 
                     <div class="media-wrap">
                         <div>
-                            <img src="images/about/profile.jpg" alt="standing on Preikestolen Cliff in Norway">
+                            <img src="images/thumbs/contact/contact-1000.jpg" srcset="images/thumbs/contact/contact-2000.jpg 2000w, 
+                                      images/thumbs/contact/contact-1000.jpg 1000w, 
+                                      images/thumbs/contact/contact-500.jpg 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt="">
                         </div>
                     </div>
 
-                    <!-- <div class="content__page-header">
+                    <div class="content__page-header">
                         <h1 class="display-1">
-                        Hi
+                        Stay Updated
                         </h1>
-                    </div> end content__page-header -->
-
-                    <!-- <p class="lead drop-cap">
-                    I'm from UK, working as an outdoor guide for an expedition cruise company.  
-                    </p> -->
+                    </div> <!-- end content__page-header -->
 
                     <p>
-                    My name's Tom, I work as an expedition guide on a cruise ship which sails in the Arctic. I also lead expeditions and get out on adventures when i'm back on shore. 
-
+                    Enter your email address below if you'd like to receive a notification when I write a new post. 
                     </p>
 
-                    <p>
-                    My CV can be found <a href = "images/about/Tom_Ward_CV.pdf">here</a>. 
-                
-                    </p>
+                    <form name="contactForm" id="contactForm" method="post" action="https://formspree.io/f/xrgwwbvp" autocomplete="off">
+                        <fieldset>
+    
+                            <div class="form-field">
+                                <input name="cName" id="cName" class="full-width" placeholder="Your Name" value="" type="text">
+                            </div>
+    
+                            <div class="form-field">
+                                <input name="cEmail" id="cEmail" class="full-width" placeholder="Your Email" value="" type="text">
+                            </div>
+    
+                            <input name="submit" id="submit" class="btn btn--primary btn-wide btn--large full-width" value="Subscribe" type="submit">
+    
+                        </fieldset>
+                    </form> <!-- end form -->
 
                 </section>
 
@@ -116,7 +123,7 @@
         </div> <!-- end s-content -->
 
 
-        <!-- footer
+  <!-- footer
         ================================================== -->
         <footer class="s-footer footer">
             <div class="row">
@@ -134,7 +141,6 @@
         </footer>
 
     </div> <!-- end s-wrap -->
-
 
     <!-- Java Script
     ================================================== -->
