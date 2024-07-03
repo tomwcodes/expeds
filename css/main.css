@@ -3614,3 +3614,10 @@ body.search-is-visible {
     opacity    : 1;
     visibility : visible;
 }
+
+figcaption {
+    color: black;
+    font-style: italic;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+  }
